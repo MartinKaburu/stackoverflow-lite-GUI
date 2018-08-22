@@ -408,7 +408,7 @@ body{
   margin-left: -15%;
   width: 150%;
   display: block;
-  padding: 15px 10px 15px 60px;
+  padding: 5px 10px 5px 60px;
   color: #0085a1;
 
 }
@@ -498,19 +498,22 @@ body{
   color:#0085a1;
 }
 .feed .ask_question button{
+  z-index: 10000;
   display: block;
+  margin-left: 5%;
+  width: 85%;
   background-color: #0085a1;
   color: #fff;
   padding: 10px 15px;
   border: none;
-  margin-left: 63%;
+  /*margin-left: 63%;*/
 }
 .feed .ask_question button:hover{
   color: #000;
   background-color: #fff;
   border: 2px solid #207cca;
 }
-.feed h1{
+.feed h1, h2{
   color: #0085a1;
   text-align: left;
   font-family: Arial, Helvetica;
@@ -523,16 +526,37 @@ body{
 }
 
 .feed .ask_question{
-  background-color: #fff;
   height: 43%;
   width: 20%;
   position: fixed;
   z-index: 1;
-  bottom: 5%;
+  bottom: 2%;
   left: 0;
   overflow-x: hidden;
   padding-top: 20px;
-  box-shadow: 5px 5px 5px 6px #ccc;
+
+}
+
+.feed .ask_question h3{
+  color: #0085a1;
+  font-family: Arial, Helvetica;
+  font-weight: bold;
+  line-height: 1.9em;
+  padding-bottom: 1px;
+  margin-left: 5%;
+  margin-bottom: 2%;
+}
+
+.feed .ask_question textarea{
+  padding: 10px;
+  color: #000;
+  background-color: #fff;
+  margin-top: 0px;
+  width: 85%;
+  height: 55%;
+  margin-left: 5%;
+  border: none;
+  box-shadow: 3px -5px 5px 6px #ccc;
 }
 .feed .logo{
   height: 43%;
@@ -543,6 +567,28 @@ body{
   left: .5%;
   overflow-x: hidden;
   padding-top: 20px;
+}
+.user_info{
+  right: 0;
+  top:40%;
+  position: fixed;
+
+}
+
+.user_info button{
+  display: inline;
+  background-color: #0085a1;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  margin-left: 0%;
+}
+.user_info ul{
+  margin-right: 5%;
+}
+.user_info h3{
+  margin-left: 43%;
+  padding-bottom: 2%;
 }
 .container{
   margin-left: 40%;

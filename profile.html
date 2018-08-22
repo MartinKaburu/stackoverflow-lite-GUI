@@ -3,9 +3,6 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="app/user_interface/gh-pages/static/style.css">
-    <script src="app/user_interface/gh-pages/static/ckeditor/ckeditor.js"></script>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link src="app/user_interface/gh-pages/static/main.js">
     <title>Stack Overflow lite</title>
   </head>
@@ -37,7 +34,7 @@
           sunt in culpa qui officia deserunt mollit anim id est laborum. <br>
           <br>
           Posted by <a href="#">user__001 </a><br>
-          On 13 Jun 2039</p> <button class="show_more" onclick="show_hidden('my_answer_id');">Show more</button>
+          On 13 Jun 2039</p> <button class="show_more" onclick="show_hidden('my_answer_id');">Answers 30</button>
           <script type="text/javascript">
           function show_hidden(id){
                 document.getElementById(id).style.display = "block";
@@ -85,7 +82,7 @@
             sunt in culpa qui officia deserunt mollit anim id est laborum. <br>
             <br>
             Posted by <a href="#">user__001 </a><br>
-            On 13 Jun 2039</p> <button class="show_more" onclick="show_hidden('my_answer_id');">Show more</button>
+            On 13 Jun 2039</p> <button class="show_more" onclick="show_hidden('my_answer_id');">Answers 25</button>
             <form id="my_answer_id" class="my_answer" action="index.html" method="post">
               <hr>
               <p>
@@ -128,7 +125,7 @@
               sunt in culpa qui officia deserunt mollit anim id est laborum. <br>
               <br>
               Posted by <a href="#">user__001 </a><br>
-              On 13 Jun 2039</p> <button class="show_more" onclick="show_hidden('my_answer_id');">Show more</button>
+              On 13 Jun 2039</p> <button class="show_more" onclick="show_hidden('my_answer_id');">Answers 21</button>
               <form id="my_answer_id" class="my_answer" action="index.html" method="post">
                 <hr>
                 <p>
@@ -171,7 +168,7 @@
                 sunt in culpa qui officia deserunt mollit anim id est laborum. <br>
                 <br>
                 Posted by <a href="#">user__001 </a><br>
-                On 13 Jun 2039</p> <button class="show_more" onclick="show_hidden('my_answer_id');">Show more</button>
+                On 13 Jun 2039</p> <button class="show_more" onclick="show_hidden('my_answer_id');">Answers 14</button>
                 <form id="my_answer_id" class="my_answer" action="index.html" method="post">
                   <hr>
                   <p>
@@ -193,7 +190,7 @@
               </div>
       </div>
       <div class="side_bar animated bounceInRight">
-        <h1>Other Questions</h1>
+        <h2>My Recent Questions</h2>
         <hr>
         <ul>
           <li><a href="#"> Checkout this question story</a> </li>
@@ -205,17 +202,23 @@
         </ul>
       </div>
       <form class="ask_question animated bounceInLeft" action="index.html" method="post">
-        <textarea rows="5" class="form-control" placeholder="Ask question" id="question" name='question' required data-validation-required-message="Please enter a question first"></textarea>
-        <script type="text/javascript">
-          CKEDITOR.replace('question');
+        <h3>Have a question?</h3>
+        <textarea rows="5" class="form-control" id="question" name='question' required data-validation-required-message="Please enter a question first"></textarea>
         </script>
-        <button type="submit" class="button">Question</button>
+        <button type="submit" class="button">Ask</button>
       </form>
       <div class="logo animated bounceInLeft">
         <img src="app/user_interface/gh-pages/static/img/logo.png" alt="">
       </div>
       <div class="profile animated bounceInRight">
         <img src="app/user_interface/gh-pages/static/img/avatar0.png" alt="avatart">
+      </div>
+      <div class="user_info">
+        <h3>John Doe</h3>
+        <ul>
+          <li><button type="submit" class="button">Questions Asked 4</button></li>
+          <li><button type="submit" class="button">Answers Given 90</button></li>
+        </ul>
       </div>
       </div>
   </body>
