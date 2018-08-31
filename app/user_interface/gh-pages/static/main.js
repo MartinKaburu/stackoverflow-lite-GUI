@@ -1,7 +1,8 @@
 function show_hidden(id){
-      if(document.getElementById(id).style.display == "block"){
-            document.getElementById(id).style.display = "none";
+      div = document.getElementById(id);
+      if(div.style.display == "block"){
+          div.style.display = "none";
       }else{
-      document.getElementById(id).style.display = "block"
-      }
+        div.style.display = "block";
+      };
   }
